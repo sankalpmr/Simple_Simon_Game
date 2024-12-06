@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+  text-align: center; /* Center-align all text */
+  background-color: #011A33; /* Dark navy blue background */
+  font-family: 'Arial', sans-serif; /* Set default font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* "Press to Start" Title */
+#level-title {
+  font-family: 'Times New Roman', serif; /* Change font to Times New Roman */
+  font-size: 6rem; /* Increase font size for title */
+  margin: 2% 0 3%; /* Reduced margins for top and bottom */
+  color: grey; /* Set title color to grey */
+  padding: 30px 50px; /* Add padding around the title */
+  box-shadow: 0px 0px 30px white; /* Glowing white shadow effect */
+  border-radius: 12px; /* Slight rounded corners */
+  letter-spacing: 4px; /* Increase letter spacing for visual appeal */
+  animation: glow 2s infinite; /* Apply glow animation */
+}
+
+/* Glow animation for title */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0px 0px 15px white; /* Subtle shadow at the start and end */
+  }
+  50% {
+    box-shadow: 0px 0px 40px white; /* Stronger glow at the middle */
+  }
+}
+
+/* Container for the square buttons */
+.container {
+  display: block; /* Block-level container */
+  width: 50%; /* Set container width to 50% */
+  margin: 30px auto; /* Center container horizontally and add margin on top */
+}
+
+/* Styles for square buttons */
+.btn {
+  margin: 20px; /* Add spacing between buttons */
+  display: inline-block; /* Display buttons inline */
+  height: 175px; /* Increased height by 25% */
+  width: 175px; /* Increased width by 25% */
+  border-radius: 8%; /* Slightly rounded corners */
+  transition: transform 0.3s ease; /* Smooth transition on hover/interaction */
+}
+
+/* Color variants for buttons */
+.red { background-color: #CC0000; } /* Red button */
+.green { background-color: #006600; } /* Green button */
+.blue { background-color: #000099; } /* Blue button */
+.yellow { background-color: #CCCC00; } /* Yellow button */
+
+/* Effect when button is pressed */
+.pressed {
+  box-shadow: 0 0 25px white; /* Apply glowing white shadow */
+  background-color: grey; /* Change button color to grey */
+}
+
+/* Effect when button disappears */
+.dissapear {
+  box-shadow: 0 0 60px white; /* Apply glowing shadow effect */
+  filter: brightness(250%); /* Brighten the button */
+}
+
+/* Footer for attribution */
+.footer {
+  position: fixed; /* Fixed position at the bottom-right corner */
+  bottom: 20px; /* 20px from the bottom */
+  right: 20px; /* 20px from the right */
+  font-family: 'Roboto', sans-serif; /* Set font for footer text */
+  font-size: 1.5rem; /* Set font size */
+  color: #FEF2BF; /* Light yellow color for footer text */
+  animation: float 3s infinite; /* Apply floating animation */
+  letter-spacing: 1px; /* Slight letter-spacing for footer */
+}
+
+/* Floating effect for footer */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* No movement at start and end */
+  }
+  50% {
+    transform: translateY(-8px); /* Move up slightly in the middle */
+  }
+}

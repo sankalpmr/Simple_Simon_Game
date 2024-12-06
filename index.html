@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character encoding and page title -->
+  <meta charset="utf-8">
+  <title>Simple Simon Game</title>
+  
+  <!-- Link to external stylesheet for design -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Link to Google Fonts for "Press Start 2P" font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body id="body"> <!-- Body element with an ID for styling -->
+  
+  <!-- Title for the game -->
+  <h1 id="level-title">Press Enter to Start</h1>
+  
+  <!-- Container for the game buttons -->
+  <div class="container">
+    
+    <!-- Row 1: Two buttons (green and red) -->
+    <div class="row">
+      <div id="green" class="btn green"></div> <!-- Green button -->
+      <div id="red" class="btn red"></div> <!-- Red button -->
+    </div>
+    
+    <!-- Row 2: Two buttons (yellow and blue) -->
+    <div class="row">
+      <div id="yellow" class="btn yellow"></div> <!-- Yellow button -->
+      <div id="blue" class="btn blue"></div> <!-- Blue button -->
+    </div>
+    
+  </div>
+
+  <!-- Include jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  
+  <!-- Link to external JavaScript file for game logic -->
+  <script src="index.js"></script>
+
+  <!-- Footer for attribution -->
+  <div class="footer">By, Sankalp M R</div>
+
+</body>
+
+</html>
